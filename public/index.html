@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <!-- Path to the script.js and the style.css page -->
+    <script src="javascripts/script.js"></script>
+    <link rel="stylesheet" href="stylesheets/style.css">
+
+</head>
+<body>
+
+    
+<!-- Welcome Page -->
+<div data-role="page" id="welcome">
+  <div data-role="header">
+      <h1>WELCOME TO OUR STORE</h1>
+  </div>
+
+  <div role="main" class="ui-content">
+      <div class="content-wrapper" style="background-color: rgba(255,255,255,0.5);">
+
+          <h2>Discover Our Amazing Products</h2>
+          <p>Welcome to our website! We offer a wide range of high-quality Tech products that cater to your needs.</p>
+          <a href="#products" data-role="button" data-icon="arrow-r" data-iconpos="right">Explore Products</a>
+          <div class="trademark">
+              <!-- <h4>© 2023 T&T Shop</h4> -->
+          </div>
+      </div>
+  </div>
+
+  <div data-role="footer">
+      <!-- Empty footer, reserved for positioning purposes -->
+      <h4>© 2023 T&T Shop</h4>
+  </div>
+</div>
+
+
+<!-- Products Page -->
+<div data-role="page" id="products">
+    <div data-role="header" data-position="fixed">
+        <h1>MAIN PRODUCTS</h1>
+        <a href="#welcome" data-icon="home" data-iconpos="notext" class="ui-btn-right">Home</a>
+    </div>
+
+    <div role="main" class="ui-content">
+        <ul data-role="listview" data-inset="true">
+            <li>
+                <a href="#product1">
+                    <img src="images/m_img_oculus_01_01.png" alt="Product 1">
+                    <h2>OCULUS QUEST (1 & 2)</h2>
+                    <p>The All-new Oculus Quest 2 from META</p>
+                </a>
+            </li>
+            <li>
+                <a href="#product2">
+                    <img src="images/EliteStrap.jpg" alt="Product 2">
+                    <h2>ACCESSORIES 1</h2>
+                    <p>Elite Strap Batteries Pack</p>
+                </a>
+            </li>
+            <li>
+                <a href="#product3">
+                    <img src="images/OculusCase.jpg" alt="Product 3">
+                    <h2>ACCESSORIES 2</h2>
+                    <p>Oculus Carrying Case</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div data-role="footer">
+        <h4>© 2023 T&T Shop</h4>
+    </div>
+</div>
+
+
+<!-- Product Details Page for Product 1 -->
+<div data-role="page" id="product1">
+    <div data-role="header" data-position="fixed">
+        <a href="#products" data-icon="back" data-rel="back">Back</a>
+        <h1>Product 1</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+        <h2>Oculus 2</h2>
+        <h3>$300</h3>
+        <img src="images/Quest2.jpg" alt="Product 1" class="product-image">
+        <p>The Oculus Quest 2 is a virtual reality (VR) headset developed by Facebook's Oculus division. It is the successor to the original Oculus Quest and offers an immersive and wireless VR experience.</p>
+        <a href="#cart-summary" data-role="button" data-icon="cart" data-iconpos="right" class="add-to-cart-button">Add to Cart</a>
+    </div>
+
+    <div data-role="footer">
+        <h4>© 2023 T&T Shop</h4>
+    </div>
+</div>
+
+
+<!-- Product Details Page for Product 2 -->
+<div data-role="page" id="product2">
+    <div data-role="header" data-position="fixed">
+        <a href="#products" data-icon="back" data-rel="back">Back</a>
+        <h1>Product 2</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+        <h2>Accessories 1</h2>
+        <h3>$50</h3>
+        <img src="images/EliteStrap.jpg" alt="Product 2" class="product-image">
+        <p>The Elite Strap Batteries Pack is an accessory for the Oculus Quest. It provides extended battery life and additional comfort for longer VR sessions.</p>
+        <a href="#cart-summary" data-role="button" data-icon="cart" data-iconpos="right" class="add-to-cart-button">Add to Cart</a>
+    </div>
+
+    <div data-role="footer">
+        <h4>© 2023 T&T Shop</h4>
+    </div>
+</div>
+
+
+<!-- Product Details Page for Product 3 -->
+<div data-role="page" id="product3">
+    <div data-role="header" data-position="fixed">
+        <a href="#products" data-icon="back" data-rel="back">Back</a>
+        <h1>Product 3</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+        <h2>Accessories 2</h2>
+        <h3>$30</h3>
+        <img src="images/OculusCase.jpg" alt="Product 3" class="product-image">
+        <p>The Oculus Carrying Case is a protective case designed specifically for the Oculus Quest. It ensures safe storage and transport of the VR headset and accessories.</p>
+        <a href="#cart-summary" data-role="button" data-icon="cart" data-iconpos="right" class="add-to-cart-button">Add to Cart</a>
+    </div>
+
+    <div data-role="footer">
+        <h4>© 2023 T&T Shop</h4>
+    </div>
+</div>
+
+
+
+<!-- Cart Summary Page -->
+<div data-role="page" id="cart-summary">
+    <div data-role="header" data-position="fixed">
+        <a href="#" data-icon="back" data-rel="back">Back</a>
+        <h1>Cart Summary</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+        <h2>Selected Items:</h2>
+        <ul id="cart-items" data-role="listview" data-inset="true">
+            <!-- Selected items will be displayed here dynamically -->
+           
+            <!-- Add more list items for each item in the cart -->
+        </ul>
+        <a href="#" data-role="button" data-icon="check" data-iconpos="right">Checkout</a>
+    </div>
+
+    <div data-role="footer">
+        <h4>© 2023 T&T Shop</h4>
+    </div>
+</div>
+
+<div data-role="page" id="checkout">
+    <div data-role="header" data-position="fixed">
+        <a href="#" data-icon="back" data-rel="back">Back</a>
+        <h1>Checkout</h1>
+    </div>
+
+    <div role="main" class="ui-content" id="checkout-display">
+
+        <a href="#" data-role="button" data-icon="check" data-iconpos="right">Pay</a>
+    </div>
+
+    <div data-role="footer">
+        <h4>© 2023 T&T Shop</h4>
+    </div>
+</div>
+
+
+</body>
+</html>
